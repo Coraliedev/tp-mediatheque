@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.album,
+.film {
+  background-color: slategray;
+  margin-bottom: 2vh;
+  height: 40vh;
+  width:20vw;
+  text-align: center;
+  border-radius: 1em;
+  color: white;
+
+}
+
+
+
+p,
+img {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+.album img,
+.film img {
+  height: 20vh;
+}

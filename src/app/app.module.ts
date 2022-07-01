@@ -1,3 +1,4 @@
+import { ProductListComponent } from './_pages/products-page/product-list/product-list.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,6 +10,8 @@ import { NotFoundComponent } from './_pages/not-found/not-found.component';
 import { HomePageComponent } from './_pages/home-page/home-page.component';
 import { ProductsPageComponent } from './_pages/products-page/products-page.component';
 
+import { ProductCardComponent } from './_pages/products-page/product-card/product-card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,13 +19,12 @@ import { ProductsPageComponent } from './_pages/products-page/products-page.comp
     NavbarComponent,
     NotFoundComponent,
     HomePageComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    ProductCardComponent,
+    ProductListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

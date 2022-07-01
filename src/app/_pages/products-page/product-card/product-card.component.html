@@ -1,0 +1,28 @@
+<div *ngIf="film.hasOwnProperty('real')" class="film">
+  <p *ngIf="film.nom != ''">Nom : {{ film.nom| slice: 0:25 }}</p>
+  <p *ngIf="film.real != ''">Réalisateur : {{ film.real }}</p>
+  <p *ngIf="film.annee != ''">Année : {{ film.annee }}</p>
+  <img *ngIf="film.img != ''" src="{{ film.img }}" alt="" />
+  <img
+    *ngIf="film.img == ''"
+    src="https://cdn.radiofrance.fr/s3/cruiser-production/2021/11/00d28ab3-5486-4153-ad39-3bb283a68647/860_ken_jensen_ouch_copy.jpg"
+    alt=""
+  />
+  <p *ngIf="film.synopsis != ''">
+    Synopsis : {{ film.synopsis | slice: 0:150 }}...
+  </p>
+  <p *ngIf="film.details != ''">Détail : {{ film.detail }}</p>
+</div>
+
+<div *ngIf="album.hasOwnProperty('artiste')" class="album">
+  <p *ngIf="album.nom != ''">{{ album.nom | slice: 0:25 }}</p>
+  <p *ngIf="album.artiste != ''">{{ album.artiste }}</p>
+  <p *ngIf="album.annee != ''">{{ album.annee }}</p>
+  <img *ngIf="album.img != ''" src="{{ film.img }}" alt="" />
+  <img
+    *ngIf="album.img == ''"
+    src="https://cdn.radiofrance.fr/s3/cruiser-production/2021/11/00d28ab3-5486-4153-ad39-3bb283a68647/860_ken_jensen_ouch_copy.jpg"
+    alt=""
+  />
+  <p *ngIf="album.details != ''">{{ album.detail }}</p>
+</div>

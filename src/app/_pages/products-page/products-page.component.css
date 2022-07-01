@@ -1,0 +1,11 @@
+*{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  min-height:100%;
+}
+
+h2{
+  text-align: center;
+  color: slategray;
+}
